@@ -30,6 +30,27 @@ Elimina del primer arreglo los elementos que también estén presentes en el seg
 
 ---
 
+## 🧪 Pruebas unitarias con Vitest
+
+El proyecto incluye pruebas unitarias utilizando [Vitest](https://vitest.dev), enfocadas en validar la lógica principal de cada ejercicio.
+
+### Archivos de prueba:
+```
+📂 __tests__
+ ┣ 📜 validatePIN.test.js
+ ┣ 📜 persistence.test.js
+ ┣ 📜 findMissingLetter.test.js
+ ┗ 📜 arrayDiff.test.js
+```
+
+Para ejecutarlas:
+
+```bash
+npm run test
+```
+
+---
+
 ## 🧰 Estructura del proyecto
 
 ```
@@ -40,7 +61,11 @@ Elimina del primer arreglo los elementos que también estén presentes en el seg
  ┃ ┣ 📜PersistentBugger.jsx
  ┃ ┣ 📜FindMissingLetter.jsx
  ┃ ┣ 📜ArrayDiff.jsx
- ┃ ┗ 📜Header.jsx
+ ┃ ┣ 📜Header.jsx
+ ┃ ┣ 📜ValidatePinLogic.js
+ ┃ ┣ 📜PersistentBuggerLogic.js
+ ┃ ┣ 📜FindMissingLetterLogic.js
+ ┃ ┗ 📜ArrayDiffLogic.js
  ┣ 📜App.jsx
  ┗ 📜main.jsx
 ```

@@ -1,26 +1,6 @@
 import React, { useState } from "react";
 import CardWrapper from "./CardWrapper";
-
-// Se inicializa un contador para registrar cuántas veces se multiplican los dígitos.
-// El bucle continúa mientras el número tenga más de un dígito (es decir, sea mayor o igual a 10).
-// Se convierte el número en string para separar sus dígitos.
-// split("") separa los caracteres individualmente.
-// map(Number) convierte cada carácter a número.
-// reduce multiplica todos los dígitos entre sí.
-// Después de cada iteración, se incrementa el contador.
-// Al finalizar, se devuelve la cantidad total de pasos realizados.
-const persistence = (num) => {
-  let count = 0;
-  while (num >= 10) {
-    num = num
-      .toString()
-      .split("")
-      .map(Number)
-      .reduce((a, b) => a * b);
-    count++;
-  }
-  return count;
-};
+import { persistence } from "./PersistentBuggerLogic";
 
 const PersistentBugger = () => {
   const [input, setInput] = useState("");

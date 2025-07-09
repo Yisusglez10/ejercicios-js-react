@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import CardWrapper from "./CardWrapper";
-
-// Se usa filter para recorrer el arreglo `a`.
-// En cada elemento, se verifica que no esté incluido en el arreglo `b`.
-// Solo se conservan los elementos que no están en `b`.
-// El resultado es un nuevo arreglo con los elementos filtrados.
-const arrayDiff = (a, b) => {
-  return a.filter((item) => !b.includes(item));
-};
+import { arrayDiff } from "./ArrayDiffLogic";
 
 const ArrayDiff = () => {
   const [arrayA, setArrayA] = useState("");
